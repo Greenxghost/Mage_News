@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Iacuzio_News>
+            <version>0.1.0</version>
+        </Iacuzio_News>
+    </modules>
+    <global>
+        <blocks>
+            <iacuzio_news>
+                <class>Iacuzio_News_Block</class>
+            </iacuzio_news>
+        </blocks>
+        <helpers>
+            <iacuzio_news>
+                <class>Iacuzio_News_Helper</class>
+            </iacuzio_news>
+        </helpers>
+        <models>
+            <iacuzio_news>
+                <class>Iacuzio_News_Model</class>
+                <resourceModel>iacuzio_news_resource</resourceModel>
+            </iacuzio_news>
+            <iacuzio_news_resource>
+                <class>Iacuzio_News_Model_Resource</class>
+                <entities>
+                    <category>
+                        <table>iacuzio_news_category</table>
+                    </category>
+                    <story>
+                        <table>iacuzio_news_story</table>
+                    </story>
+                </entities>
+            </iacuzio_news_resource>
+        </models>
+        <resources>
+            <iacuzio_news_setup>
+                <setup>
+                    <module>Iacuzio_News</module>
+                </setup>
+            </iacuzio_news_setup>
+        </resources>
+    </global>
+    <frontend>
+
+    </frontend>
+    <admin>
+
+    </admin>
+    <default>
+
+    </default>
+</config>

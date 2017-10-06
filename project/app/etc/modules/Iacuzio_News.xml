@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Iacuzio_News>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Iacuzio_News>
+    </modules>
+</config>
