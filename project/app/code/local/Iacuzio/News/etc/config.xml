@@ -45,7 +45,15 @@
 
     </frontend>
     <admin>
-
+      <routers>
+        <iacuzio_news>
+            <use>admin</use>
+            <args>
+                <module>Iacuzio_News</module>
+                <frontName>iacuzio_news</frontName>
+            </args>
+        </iacuzio_news>
+      </routers>
     </admin>
     <default>
 

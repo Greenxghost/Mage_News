@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <iacuzio_news>
+                    <title>GreenNews</title>
+                    <sort_order>80</sort_order>
+                    <children>
+                        <iacuzio_news_category>
+                            <title>Categories</title>
+                            <sort_order>10</sort_order>
+                            <action>iacuzio_news/adminhtml_category</action>
+                        </iacuzio_news_category>
+                        <iacuzio_news_story>
+                            <title>Story</title>
+                            <sort_order>10</sort_order>
+                            <action>iacuzio_news/adminhtml_story</action>
+                        </iacuzio_news_story>
+                    </children>
+                </iacuzio_news>
+            </children>
+        </cms>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <cms>
+                        <children>
+                            <iacuzio_news>
+                                <title>Iacuzio News</title>
+                                <sort_order>90</sort_order>
+                            </iacuzio_news>
+                        </children>
+                    </cms>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <iacuzio_news translate="title">
+                                        <title>Permissions for News</title>
+                                        <sort_order>100</sort_order>
+                                    </iacuzio_news>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
