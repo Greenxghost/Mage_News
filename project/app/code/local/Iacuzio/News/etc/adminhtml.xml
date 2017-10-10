@@ -3,16 +3,16 @@
     <menu>
         <cms>
             <children>
-                <iacuzio_news>
+                <iacuzio_news translate="title">
                     <title>GreenNews</title>
                     <sort_order>80</sort_order>
                     <children>
-                        <iacuzio_news_category>
+                        <iacuzio_news_category translate="title">
                             <title>Categories</title>
                             <sort_order>10</sort_order>
                             <action>iacuzio_news/adminhtml_category</action>
                         </iacuzio_news_category>
-                        <iacuzio_news_story>
+                        <iacuzio_news_story translate="title">
                             <title>Story</title>
                             <sort_order>10</sort_order>
                             <action>iacuzio_news/adminhtml_story</action>

@@ -41,8 +41,27 @@
             </iacuzio_news_setup>
         </resources>
     </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <iacuzio_news>
+                    <files>
+                        <default>Iacuzio_News.csv</default>
+                    </files>
+                </iacuzio_news>
+            </modules>
+        </translate>
+    </adminhtml>
     <frontend>
-
+        <translate>
+            <modules>
+                <iacuzio_news>
+                    <files>
+                        <default>Iacuzio_News.csv</default>
+                    </files>
+                </iacuzio_news>
+            </modules>
+        </translate>
     </frontend>
     <admin>
       <routers>

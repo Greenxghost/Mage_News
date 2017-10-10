@@ -63,9 +63,6 @@ $tableStory->addColumn(
     'Story Updated At'
 );
 
-// prepare table for iacuzio_news_story
-// TODO
-
 //create tables
 $installer->getConnection()->createTable($tableStory);
 $installer->endSetup();
