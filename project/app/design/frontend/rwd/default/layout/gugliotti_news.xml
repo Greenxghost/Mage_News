@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<layout>
-    <iacuzio_news_list_index>
-        <reference name="content">
-            <block type="core/template" name="iacuzio_news.list" template="iacuzio_news/list.phtml"/>
-        </reference>
-    </iacuzio_news_list_index>
-</layout>
