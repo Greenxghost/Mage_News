@@ -41,17 +41,6 @@
             </iacuzio_news_setup>
         </resources>
     </global>
-    <adminhtml>
-        <translate>
-            <modules>
-                <iacuzio_news>
-                    <files>
-                        <default>Iacuzio_News.csv</default>
-                    </files>
-                </iacuzio_news>
-            </modules>
-        </translate>
-    </adminhtml>
     <frontend>
         <translate>
             <modules>
@@ -62,6 +51,15 @@
                 </iacuzio_news>
             </modules>
         </translate>
+        <routers>
+            <iacuzio_news>
+                <use>standard</use>
+                <args>
+                    <module>Iacuzio_News</module>
+                    <frontName>stories</frontName>
+                </args>
+            </iacuzio_news>
+        </routers>
     </frontend>
     <admin>
       <routers>
@@ -74,6 +72,24 @@
         </iacuzio_news>
       </routers>
     </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <iacuzio_news>
+                    <files>
+                        <default>Iacuzio_News.csv</default>
+                    </files>
+                </iacuzio_news>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <iacuzio_news>
+                    <file>iacuzio_news.xml</file>
+                </iacuzio_news>
+            </updates>
+        </layout>
+    </adminhtml>
     <default>
 
     </default>

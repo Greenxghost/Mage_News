@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <iacuzio_news_adminhtml_category_index>
+        <reference name="content">
+        <block type="iacuzio_news/adminhtml_category" name="iacuzio_news.adminhtml.category.grid" />
+        </reference>
+    </iacuzio_news_adminhtml_category_index>
+    <iacuzio_news_adminhtml_category_edit>
+        <reference name="left">
+            <block type="iacuzio_news/adminhtml_category_edit_tabs" name="iacuzio_news.adminhtml.edit.tabs" />
+        </reference>
+        <reference name="content">
+            <block type="iacuzio_news/adminhtml_category_edit" name="iacuzio_news.adminhtml.category.edit" />
+        </reference>
+    </iacuzio_news_adminhtml_category_edit>
+</layout>

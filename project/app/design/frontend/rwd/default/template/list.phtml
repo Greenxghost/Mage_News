@@ -1,0 +1,11 @@
+<?php
+    $stories = $this->getStories();
+?>
+<h1>
+    <?php echo $this->__('Stories'); ?>
+</h1>
+<?php if (!$stories->getSize()); ?>
+<p class="note-msg"> <?php echo $this->__('There are no stories here, fool'); ?> </p>
+
+
+

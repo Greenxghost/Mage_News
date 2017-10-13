@@ -6,24 +6,29 @@ Mage::setIsDeveloperMode(true);
 ini_set('display_errors', 1);
 umask(0);
 Mage::app();
+$categoryz = Mage::getModel('iacuzio_news/category');
+$categoryz->setCode('top');
+$categoryz->setName('Think Open');
+$categoryz->setStatus(true);
+$categoryz->save();
 
-// create a category
+//
 //$category = Mage::getModel('iacuzio_news/category')->load(1);
 //echo'Category<hr>';
 //Zend_Debug::dump($category);
 //echo'<hr>';
 ////create story
 //$story = Mage::getModel('iacuzio_news/story');
-//$story-> setTitle('La mia storia4');
-//$story-> setContent ('Lorem Ipsum5');
+//$story-> setTitle('La mia storia');
+//$story-> setContent ('Lorem Ipsum bla');
 //$story-> setStatus(true);
 //$story-> setCategory($category);
 //$story-> save();
-//
-//echo '<hr>';
-//echo 'Category Name =' . $story->getCategory()->getName();
-//
-//Zend_Debug::dump($category);
+////
+echo '<hr>';
+echo 'Category Name =' . $story->getCategory()->getName();
+
+Zend_Debug::dump($category);
 
 
 //$resource=  Mage::getSingleton('core/resource');
